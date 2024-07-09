@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+.idea/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -428,3 +429,16 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+/shelf/
+/workspace.xml
+# Rider ignored files
+/.idea.GeekShopping.iml
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
