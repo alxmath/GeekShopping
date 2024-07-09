@@ -1,6 +1,6 @@
-namespace GeekShopping.ProductAPI.Data.ValueObjects;
+namespace GeekShopping.ProductAPI.Data.DataObjects;
 
-public class ProductVO
+public class ProductDto
 {
     public long Id { get; set; }
     public string Name { get; set; }

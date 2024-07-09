@@ -1,12 +1,12 @@
-using GeekShopping.ProductAPI.Data.ValueObjects;
+using GeekShopping.ProductAPI.Data.DataObjects;
 
 namespace GeekShopping.ProductAPI.Repository;
 
 public interface IProductRepository
 {
-    Task<IEnumerable<ProductVO>> FindAll();
-    Task<ProductVO> FindById(long id);
-    Task<ProductVO> Create(ProductVO vo);
-    Task<ProductVO> Update(ProductVO vo);
+    Task<IEnumerable<ProductDto>> FindAll();
+    Task<ProductDto> FindById(long id);
+    Task<ProductDto> Create(ProductDto dto);
+    Task<ProductDto> Update(ProductDto dto);
     Task<bool> Delete(long id);
 }
