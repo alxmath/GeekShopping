@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{125F4C53-D2BB-4AC3-BF80-72C42F8597D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{14C07E00-1A68-401B-AC46-804AACF3CAFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.Web", "GeekShopping.Web\GeekShopping.Web.csproj", "{C8A29646-A6A1-462D-9980-7BB06579512E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.ProductAPI", "GeekShopping.ProductAPI\GeekShopping.ProductAPI.csproj", "{7210E9E1-DC2B-4AA7-94BA-C8278C9DA90F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8A29646-A6A1-462D-9980-7BB06579512E} = {125F4C53-D2BB-4AC3-BF80-72C42F8597D3}
+		{7210E9E1-DC2B-4AA7-94BA-C8278C9DA90F} = {14C07E00-1A68-401B-AC46-804AACF3CAFB}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8A29646-A6A1-462D-9980-7BB06579512E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A29646-A6A1-462D-9980-7BB06579512E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A29646-A6A1-462D-9980-7BB06579512E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A29646-A6A1-462D-9980-7BB06579512E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7210E9E1-DC2B-4AA7-94BA-C8278C9DA90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7210E9E1-DC2B-4AA7-94BA-C8278C9DA90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7210E9E1-DC2B-4AA7-94BA-C8278C9DA90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7210E9E1-DC2B-4AA7-94BA-C8278C9DA90F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
