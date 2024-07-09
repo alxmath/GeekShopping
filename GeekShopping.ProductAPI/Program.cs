@@ -1,3 +1,5 @@
+using AutoMapper;
+using GeekShopping.ProductAPI.Config;
 using GeekShopping.ProductAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -18,6 +20,8 @@ var connection = builder.Configuration["MySqlConnection:MySqlConnectionString"];
 
 builder.Services.AddDbContext<MySqlContext>(options => 
     options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
