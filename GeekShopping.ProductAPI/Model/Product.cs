@@ -10,7 +10,7 @@ public class Product : BaseEntity
     [Column("name")]
     [Required]
     [StringLength(150)]
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     
     [Column("price")]
     [Required]
@@ -19,13 +19,13 @@ public class Product : BaseEntity
     
     [Column("description")]
     [StringLength(500)]
-    public string Description { get; set; }
+    public string Description { get; set; } = string.Empty;
     
     [Column("category_name")]
     [StringLength(50)]
-    public string CategoryName { get; set; }
+    public string CategoryName { get; set; } = string.Empty;
     
     [Column("image_url")]
     [StringLength(300)]
-    public string ImageUrl { get; set; }
+    public string ImageUrl { get; set; } = string.Empty;
 }

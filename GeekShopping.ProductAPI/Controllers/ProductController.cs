@@ -12,7 +12,7 @@ public class ProductController : ControllerBase
 
     public ProductController(IProductRepository repository)
     {
-        _repository = repository ?? throw new ArgumentException(nameof(repository));
+        _repository = repository;
     }
 
     [HttpGet]
@@ -29,4 +29,35 @@ public class ProductController : ControllerBase
         if (product is null) return NotFound();
         return Ok(product);
     } 
+    
+    [HttpPost]
+    public async Task<ActionResult<ProductDto>> Create([FromBody] ProductDto? dto)
+    {
+        if (dto is null)
+            return BadRequest();
+
+        var product = await _repository.Create(dto);
+        return Ok(product);
+    }
+    
+    [HttpPut]
+    public async Task<ActionResult<ProductDto>> Update([FromBody] ProductDto? dto)
+    {
+        if (dto is null)
+            return BadRequest();
+
+        var product = await _repository.Update(dto);
+        return Ok(product);
+    }
+
+    [HttpDelete("{id:long}")]
+    public async Task<IActionResult> Delete(long id)
+    {
+        var status = await _repository.Delete(id);
+        if (!status)
+            return BadRequest();
+
+        return Ok(status);
+    }
+    
 }
